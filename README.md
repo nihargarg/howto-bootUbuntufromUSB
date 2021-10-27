@@ -1,3 +1,6 @@
+#### This tutorial was written by Nihar Garg for the Columbia University Robotics Club.
+It is also available for use here: https://github.com/columbia-university-robotics/moveit-instructions/tree/main/bootubuntufromUSB-instructions
+
 # How to boot Ubuntu from USB flash drive
 There are many options for installing Ubuntu on your computer: Native boot or dual-boot, Boot from USB flash drive, Virtual machines, Docker, etc.
 
@@ -61,7 +64,7 @@ When Rufus has finished writing the USB device, the Status bar will be green fil
 ## Step 4: Boot your machine from your newly written USB
 Read your manufacturer’s instructions on how to boot from a USB.
 
-Note: My Microsoft Surface Laptop would continuously boot from Windows even though I pressed the Volume Down key while booting. To fix this you will need to go to the UEFI Firmware settings on your machine (either by holding the Volume Up key while booting, or go to Windows Settings -> Update & Security -> Recovery -> Advanced Startup -> Restart Now). Then your machine will restart into the UEFI Firmware. Navigate to "Boot Configuration" and move the order of "USB Device" to the top (above Windows).
+Note: My Microsoft Surface Laptop would continuously boot from Windows even though I pressed the Volume Down key while booting. To fix this you will need to go to the UEFI Firmware settings on your machine (either by holding the Volume Up key while booting, or go to Windows Settings -> Update & Security -> Recovery -> Advanced Startup -> Restart Now). Then your machine will restart into the UEFI Firmware. Navigate to "Boot Configuration" and move the order of "USB Device" to the top (above Windows). My Surface Laptop then boots directly in recovery mode to the GNU GRUB menu. Type "exit" and then press enter to be taken to the recovery menu again, from where you can select "Boot from USB" again.
 
 #### Step 4A: Power off your computer and remove the 4GB USB.
 
